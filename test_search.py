@@ -9,5 +9,5 @@ def test_positive_search(open_browser):
 
 def test_negative_search(open_browser):
     browser.element('[name="q"]').should(be.blank).type('olnbghuiol').press_enter()
-    browser.element('p[aria-level="3"]').should(have.text('Па запыце olnbghuiol нічога не знойдзена'))
+    browser.element('p[aria-level="3"]').should(have.text('По запросу olnbghuiol ничего не найдено.'))
 
